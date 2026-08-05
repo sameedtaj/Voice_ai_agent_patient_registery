@@ -15,17 +15,30 @@ Replace these placeholders after deployment:
 
 ## Features
 
-- Natural, LLM-powered patient registration over a real U.S. phone number
-- Required demographic collection with optional insurance, language, and emergency-contact details
-- Field-specific validation and conversational re-prompts
-- Caller corrections, interruptions, and out-of-order responses
-- Full read-back and explicit confirmation before saving
-- Persistent PostgreSQL storage
-- Duplicate detection by phone number with an update option
-- REST endpoints to create, list, retrieve, update, and soft-delete patients
-- Consistent JSON response envelope and HTTP status codes
-- Conversation and final-payload logging
-- Automated API and validation tests
+🎙️ **Voice-First Experience**
+Natural, LLM-powered conversations over a real U.S. phone number
+Intelligent speech recognition and synthesis via Vapi
+Seamless handling of interruptions and out-of-order responses
+📝 **Smart Data Collection**
+Required demographics: name, DOB, sex, phone, address
+Optional fields: email, insurance, language preference, emergency contact
+Targeted re-prompts for invalid or unclear input
+Full read-back confirmation before persistence
+✅ **Robust Validation**
+Field-level validation at two layers (voice agent + backend API)
+Duplicate detection by phone number with update option
+Comprehensive format validation for all contact information
+💾 **Enterprise-Grade Backend**
+Persistent PostgreSQL storage with soft-delete support
+REST API with CRUD operations and filtering
+Consistent JSON response envelope
+Conversation and payload logging for audit trails
+🔒** Security by Design**
+No direct LLM-to-database access; narrowly defined tool calls only
+Webhook authentication with shared secrets
+Parameterized queries and Pydantic validation
+Environment-based configuration; secrets never in code
+
 
 ## Architecture
 
