@@ -8,10 +8,10 @@ A voice-based patient intake system that allows callers to register through a na
 
 Replace these placeholders after deployment:
 
-- **Phone number:** `+1 XXX-XXX-XXXX`
-- **API base URL:** `https://YOUR-APP.up.railway.app`
-- **Health check:** `https://YOUR-APP.up.railway.app/health`
-- **Interactive API documentation:** `https://YOUR-APP.up.railway.app/docs`
+- **Phone number:** `[+1(651)386 9157]`
+- **API base URL:** `http://localhost:8000/docs`
+- **Health check:** `https://angelic-fascination-production-ef1c.up.railway.app/health`
+- **Interactive API documentation:** `https://angelic-fascination-production-ef1c.up.railway.app/docs`
 
 ## Features
 
